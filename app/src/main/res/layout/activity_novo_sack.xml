@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rats_background"
+    tools:context=".NovoSack">
+
+    <TextView
+        android:id="@+id/textDownDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkYellow"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <EditText
+        android:id="@+id/editJds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Jardas Perdidas"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDownDistance" />
+
+    <TextView
+        android:id="@+id/textSelecioneQuarterback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/darkYellow"
+        android:gravity="center"
+        android:text="Selecione o quarterback da jogada:"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editJds"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <ImageButton
+        android:id="@+id/xButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/lgButton"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_x2" />
+
+    <ImageButton
+        android:id="@+id/rButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="120dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xButton"
+        app:srcCompat="@drawable/botao_r" />
+
+    <ImageButton
+        android:id="@+id/lgButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/cButton"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_lg" />
+
+    <ImageButton
+        android:id="@+id/cButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSelecioneQuarterback"
+        app:srcCompat="@drawable/botao_c" />
+
+    <ImageButton
+        android:id="@+id/rgButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/cButton"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_rg" />
+
+    <ImageButton
+        android:id="@+id/qbButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_qb" />
+
+    <ImageButton
+        android:id="@+id/yButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="120dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zButton"
+        app:srcCompat="@drawable/botao_y" />
+
+    <ImageButton
+        android:id="@+id/zButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_z" />
+
+    <TextView
+        android:id="@+id/textRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="RG"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rgButton"
+        app:layout_constraintStart_toStartOf="@+id/rgButton"
+        app:layout_constraintTop_toBottomOf="@+id/rgButton" />
+
+    <TextView
+        android:id="@+id/textZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Z"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/zButton"
+        app:layout_constraintStart_toStartOf="@+id/zButton"
+        app:layout_constraintTop_toBottomOf="@+id/zButton" />
+
+    <TextView
+        android:id="@+id/textY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Y"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/yButton"
+        app:layout_constraintStart_toStartOf="@+id/yButton"
+        app:layout_constraintTop_toBottomOf="@+id/yButton" />
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="C"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cButton"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/cButton"
+        app:layout_constraintTop_toBottomOf="@+id/cButton" />
+
+    <TextView
+        android:id="@+id/textQB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="QB"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/qbButton"
+        app:layout_constraintStart_toStartOf="@+id/qbButton"
+        app:layout_constraintTop_toBottomOf="@+id/qbButton" />
+
+    <TextView
+        android:id="@+id/textLG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="LG"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/lgButton"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@+id/lgButton"
+        app:layout_constraintTop_toBottomOf="@+id/lgButton" />
+
+    <TextView
+        android:id="@+id/textR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="R"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rButton"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/rButton"
+        app:layout_constraintTop_toBottomOf="@+id/rButton" />
+
+    <TextView
+        android:id="@+id/textX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="X"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/xButton"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="@+id/xButton"
+        app:layout_constraintTop_toBottomOf="@+id/xButton" />
+
+    <Button
+        android:id="@+id/registrarSackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Registrar Sack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resultadoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Resultado"
+        android:textColor="@color/ratsBlue"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textSelecioneQuarterback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".33" />
+
+</android.support.constraint.ConstraintLayout>

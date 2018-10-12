@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rats_background"
+    tools:context=".NovoDrive">
+
+    <TextView
+        android:id="@+id/textDownDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkYellow"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <Button
+        android:id="@+id/defesaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Defesa"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintStart_toEndOf="@+id/ataqueButton"
+        app:layout_constraintTop_toBottomOf="@+id/textDownDistance"
+        app:layout_constraintWidth_percent=".333333" />
+
+    <Button
+        android:id="@+id/ataqueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ataque"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDownDistance"
+        app:layout_constraintWidth_percent=".333333" />
+
+    <Button
+        android:id="@+id/specialTeamsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Special Teams"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDownDistance"
+        app:layout_constraintWidth_percent=".333333" />
+
+    <ImageButton
+        android:id="@+id/xButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/lgButton"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_x2" />
+
+    <ImageButton
+        android:id="@+id/rButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="120dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xButton"
+        app:srcCompat="@drawable/botao_r" />
+
+    <ImageButton
+        android:id="@+id/lgButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/cButton"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_lg" />
+
+    <ImageButton
+        android:id="@+id/cButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defesaButton"
+        app:srcCompat="@drawable/botao_c" />
+
+    <ImageButton
+        android:id="@+id/rgButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/cButton"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_rg" />
+
+    <ImageButton
+        android:id="@+id/qbButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_qb" />
+
+    <ImageButton
+        android:id="@+id/yButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="120dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zButton"
+        app:srcCompat="@drawable/botao_y" />
+
+    <ImageButton
+        android:id="@+id/zButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cButton"
+        app:srcCompat="@drawable/botao_z" />
+
+    <ImageButton
+        android:id="@+id/cb1Button"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fsButton"
+        app:srcCompat="@drawable/botao_cb" />
+
+    <ImageButton
+        android:id="@+id/cb2Button"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fsButton"
+        app:srcCompat="@drawable/botao_cb" />
+
+    <ImageButton
+        android:id="@+id/fsButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defesaButton"
+        app:srcCompat="@drawable/botao_fs" />
+
+    <ImageButton
+        android:id="@+id/wButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/cb1Button"
+        app:layout_constraintTop_toBottomOf="@+id/fsButton"
+        app:srcCompat="@drawable/botao_w" />
+
+    <ImageButton
+        android:id="@+id/mButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="36dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/cb2Button"
+        app:layout_constraintTop_toBottomOf="@+id/textLG"
+        app:srcCompat="@drawable/botao_m" />
+
+    <ImageButton
+        android:id="@+id/sButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/dtButton"
+        app:layout_constraintTop_toTopOf="@+id/dtButton"
+        app:srcCompat="@drawable/botao_s" />
+
+    <ImageButton
+        android:id="@+id/deButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="72dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/dtButton"
+        app:layout_constraintEnd_toStartOf="@+id/dtButton"
+        app:layout_constraintTop_toTopOf="@+id/dtButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/botao_de" />
+
+    <ImageButton
+        android:id="@+id/dtButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/fsButton"
+        app:layout_constraintTop_toBottomOf="@+id/fsButton"
+        app:srcCompat="@drawable/botao_dt" />
+
+    <TextView
+        android:id="@+id/textCB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="CB1"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/cb1Button"
+        app:layout_constraintStart_toStartOf="@+id/cb1Button"
+        app:layout_constraintTop_toBottomOf="@+id/cb1Button" />
+
+    <TextView
+        android:id="@+id/textCB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="CB2"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/cb2Button"
+        app:layout_constraintStart_toStartOf="@+id/cb2Button"
+        app:layout_constraintTop_toBottomOf="@+id/cb2Button" />
+
+    <TextView
+        android:id="@+id/textW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="W"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/wButton"
+        app:layout_constraintStart_toStartOf="@+id/wButton"
+        app:layout_constraintTop_toBottomOf="@+id/wButton" />
+
+    <TextView
+        android:id="@+id/textDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="DE"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/deButton"
+        app:layout_constraintStart_toStartOf="@+id/deButton"
+        app:layout_constraintTop_toBottomOf="@+id/deButton" />
+
+    <TextView
+        android:id="@+id/textDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="DT"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/dtButton"
+        app:layout_constraintStart_toStartOf="@+id/dtButton"
+        app:layout_constraintTop_toBottomOf="@+id/dtButton" />
+
+    <TextView
+        android:id="@+id/textS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="S"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/sButton"
+        app:layout_constraintStart_toStartOf="@+id/sButton"
+        app:layout_constraintTop_toBottomOf="@+id/sButton" />
+
+    <TextView
+        android:id="@+id/textM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="M"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/mButton"
+        app:layout_constraintStart_toStartOf="@+id/mButton"
+        app:layout_constraintTop_toBottomOf="@+id/mButton" />
+
+    <TextView
+        android:id="@+id/textFS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="FS"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/fsButton"
+        app:layout_constraintStart_toStartOf="@+id/fsButton"
+        app:layout_constraintTop_toBottomOf="@+id/fsButton" />
+
+    <Button
+        android:id="@+id/ataqueProntoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Ataque Pronto!"
+        android:textColor="@color/ratsBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <Button
+        android:id="@+id/defesaProntaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Defesa Pronta!"
+        android:textColor="@color/ratsBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <TextView
+        android:id="@+id/textRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="RG"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/rgButton"
+        app:layout_constraintStart_toStartOf="@+id/rgButton"
+        app:layout_constraintTop_toBottomOf="@+id/rgButton" />
+
+    <TextView
+        android:id="@+id/textZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Z"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/zButton"
+        app:layout_constraintStart_toStartOf="@+id/zButton"
+        app:layout_constraintTop_toBottomOf="@+id/zButton" />
+
+    <TextView
+        android:id="@+id/textY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Y"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/yButton"
+        app:layout_constraintStart_toStartOf="@+id/yButton"
+        app:layout_constraintTop_toBottomOf="@+id/yButton" />
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="C"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/cButton"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/cButton"
+        app:layout_constraintTop_toBottomOf="@+id/cButton" />
+
+    <TextView
+        android:id="@+id/textQB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="QB"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/qbButton"
+        app:layout_constraintStart_toStartOf="@+id/qbButton"
+        app:layout_constraintTop_toBottomOf="@+id/qbButton" />
+
+    <TextView
+        android:id="@+id/textLG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="LG"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/lgButton"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@+id/lgButton"
+        app:layout_constraintTop_toBottomOf="@+id/lgButton" />
+
+    <TextView
+        android:id="@+id/textR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="R"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/rButton"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/rButton"
+        app:layout_constraintTop_toBottomOf="@+id/rButton" />
+
+    <TextView
+        android:id="@+id/textX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="X"
+        android:textColor="@color/ratsYellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/xButton"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="@+id/xButton"
+        app:layout_constraintTop_toBottomOf="@+id/xButton" />
+
+    <ToggleButton
+        android:id="@+id/togglePosicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="ToggleButton"
+        android:textOff="Defensivo"
+        android:textOn="Ofensivo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editScrimmage" />
+
+    <EditText
+        android:id="@+id/editScrimmage"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Scrimmage"
+        android:inputType="number"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dickButton" />
+
+    <ImageButton
+        android:id="@+id/dickButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dickbutton" />
+
+</android.support.constraint.ConstraintLayout>

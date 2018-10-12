@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#353b57</color>
+    <color name="colorPrimaryDark">#073763</color>
+    <color name="colorAccent">#f1c232</color>
+    <color name="colorToGet">#00FF00</color>
+    <color name="colorToPay">#ff0000</color>
+    <color name="colorSecondary">#f1d253</color>
+    <color name="darkYellow">#f1c232</color>
+    <color name="lightYellow">#fff9bd</color>
+    <color name="lightGrey">#d9d9d9</color>
+    <color name="mediumGrey">#a0a0a0</color>
+    <color name="darkGrey">#6f6f6f</color>
+    <color name="ratsYellow">#f1d253</color>
+    <color name ="paleRatsYellow">#70f1d253</color>
+    <color name="ratsBlue">#353b57</color>
+    <color name="transparent">#00000000</color>
+</resources>

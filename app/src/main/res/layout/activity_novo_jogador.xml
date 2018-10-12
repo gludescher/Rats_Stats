@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nomeJogadorText"
+    android:layout_width="match_parent"
+    android:background="@drawable/rats_background"
+    android:layout_height="match_parent"
+    tools:context=".NovoJogador">
+
+    <EditText
+        android:id="@+id/editNomeJogador"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posicaoButton" />
+
+    <EditText
+        android:id="@+id/editApelido"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Apelido"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editNomeJogador"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/editNomeJogador"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeJogador" />
+
+    <EditText
+        android:id="@+id/editAnoEntrada"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Ano de entrada no time"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editNumero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editNumero"
+        app:layout_constraintTop_toBottomOf="@+id/editNumero" />
+
+    <EditText
+        android:id="@+id/editNumero"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        android:hint="Número"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editApelido"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editApelido"
+        app:layout_constraintTop_toBottomOf="@+id/editApelido" />
+
+    <Button
+        android:id="@+id/criarJogadorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Criar Jogador"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="@+id/editAnoEntrada"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editAnoEntrada"
+        app:layout_constraintTop_toBottomOf="@+id/editAnoEntrada" />
+
+    <Button
+        android:id="@+id/posicaoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Posição"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

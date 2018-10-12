@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rats_background"
+    tools:context=".AjustarGameSituation">
+
+    <TextView
+        android:id="@+id/textDownDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkYellow"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/ratsBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <EditText
+        android:id="@+id/editDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Distância"
+        android:inputType="number"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        app:layout_constraintBottom_toBottomOf="@+id/downButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/downButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent=".55" />
+
+    <EditText
+        android:id="@+id/editScrimmage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Scrimmage"
+        android:inputType="number"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        app:layout_constraintBottom_toBottomOf="@+id/togglePosicao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/togglePosicao"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent=".55" />
+
+    <EditText
+        android:id="@+id/editPontAdv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Placar Adversário"
+        android:inputType="number"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        app:layout_constraintBottom_toBottomOf="@+id/editPontRats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editPontRats"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent=".425" />
+
+    <EditText
+        android:id="@+id/editPontRats"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Placar Rats"
+        android:inputType="number"
+        android:textColor="@color/lightGrey"
+        android:textColorHint="@color/lightYellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/togglePosicao"
+        app:layout_constraintWidth_percent=".425" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDownDistance"
+        app:layout_constraintWidth_percent=".35" />
+
+    <Button
+        android:id="@+id/halfButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPontRats"
+        app:layout_constraintWidth_percent=".35" />
+
+    <Button
+        android:id="@+id/registrarAjustesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Registrar Ajustes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".35" />
+
+    <ToggleButton
+        android:id="@+id/togglePosicao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="ToggleButton"
+        android:textOff="Defesa"
+        android:textOn="Ataque"
+        app:layout_constraintEnd_toEndOf="@+id/downButton"
+        app:layout_constraintStart_toStartOf="@+id/downButton"
+        app:layout_constraintTop_toBottomOf="@+id/downButton"
+        app:layout_constraintWidth_percent=".35" />
+
+</android.support.constraint.ConstraintLayout>
